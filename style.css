@@ -1,0 +1,91 @@
+body {
+    background: linear-gradient(145deg, rgb(70, 70, 70), rgb(50, 50, 50), rgb(50, 50, 50), rgb(70, 70, 70));
+    background-position: top left;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+#input {
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgb(230, 230, 230);
+    font-family: Arial;
+    font-size: 30px;
+}
+
+#text {
+    font-family: Arial;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 30px;
+}
+
+#ground {
+    display: flex;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1;
+}
+
+#checkbox {
+    position: absolute;
+    left: 90%;
+    width: 70px;
+    height: 70px;
+}
+
+#fps-counter {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: black;
+      color: white;
+      padding: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      z-index: 9999;
+    }
+
+.circle {
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
+    transform: translate(50%, 50%);
+    z-index: -2;
+    filter: blur(2px);
+    position: absolute;
+}
+
+.square {
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(60, 60, 60);
+    filter: blur(2px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
